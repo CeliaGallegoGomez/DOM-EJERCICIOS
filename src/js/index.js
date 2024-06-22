@@ -6,8 +6,9 @@ const titleElement = document.getElementById("start-point");
 
 
 
+
 console.log(
-  `Soy un ${titleElement.tagName} con el id ${titleElement.id} y ${titleElement.className}. Mi padre es un header con id ${titleElement.parentElement.id} y clase ${}.Mi hermano ${} con id ${} y clase ${}
+  `Soy un ${titleElement.tagName} con el id ${titleElement.id} y ${titleElement.className}. Mi padre es un header con id ${titleElement.parent.id} y clase ${titleElement.parent.id}.Mi hermano ${titleElement.previousSibling.tagName} con id ${titleElement.previousSibling.id} y clase ${titleElement.previousSibling.tagName}
   "
 `
 );
